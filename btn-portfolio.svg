@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="195" height="46" viewBox="0 0 195 46">
+  <defs>
+    <linearGradient id="btnGradPort" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1887C7" />
+      <stop offset="100%" stop-color="#126B9E" />
+    </linearGradient>
+    <filter id="btnShadowPort" x="-10%" y="-10%" width="120%" height="130%">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#1887C7" flood-opacity="0.3" />
+    </filter>
+  </defs>
+  <rect x="2" y="2" width="191" height="42" rx="21" ry="21" fill="url(#btnGradPort)" stroke="rgba(255,255,255,0.25)" stroke-width="1.2" filter="url(#btnShadowPort)" />
+  <g transform="translate(18, 13)" fill="none" stroke="#FFFFFF" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+    <circle cx="8" cy="8" r="7"/>
+    <line x1="1" y1="8" x2="15" y2="8"/>
+    <path d="M8 1a10 10 0 0 1 0 14M8 1a10 10 0 0 0 0 14"/>
+  </g>
+  <text x="44" y="26" fill="#FFFFFF" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="14" font-weight="600" letter-spacing="0.3px">Live Portfolio ↗</text>
+</svg>

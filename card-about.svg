@@ -1,0 +1,109 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 430" width="100%" height="430">
+  <defs>
+    <filter id="aboutShadow" x="-5%" y="-5%" width="110%" height="115%">
+      <feDropShadow dx="0" dy="10" stdDeviation="14" flood-color="#000000" flood-opacity="0.18" />
+    </filter>
+    <clipPath id="cardClip">
+      <rect x="0" y="0" width="880" height="430" rx="24" />
+    </clipPath>
+  </defs>
+
+  <style>
+    .card-title {
+      font-family: -apple-system, BlinkMacSystemFont, 'Montserrat', 'Segoe UI', Roboto, sans-serif;
+      font-size: 26px;
+      font-weight: 900;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      fill: #FF7704;
+    }
+    .body-lead {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      font-size: 14.5px;
+      line-height: 1.5;
+      font-weight: 500;
+      fill: #334155;
+    }
+    .bullet-bold {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      font-size: 13.5px;
+      font-weight: 700;
+      fill: #0F172A;
+    }
+    .bullet-desc {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      font-size: 13.5px;
+      font-weight: 400;
+      fill: #475569;
+    }
+    .quote-text {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      font-size: 14.5px;
+      font-weight: 600;
+      font-style: italic;
+      fill: #FFFFFF;
+    }
+  </style>
+
+  <g clip-path="url(#cardClip)">
+    <rect x="0" y="0" width="880" height="430" rx="24" fill="#FFFFFF" filter="url(#aboutShadow)" />
+
+    <!-- Header: Orange Timer Icon & Bold Title -->
+    <g transform="translate(45, 34)">
+      <g transform="translate(0, 2)" stroke="#FF7704" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round">
+        <circle cx="16" cy="18" r="13" />
+        <line x1="16" y1="2" x2="16" y2="5" />
+        <line x1="12" y1="2" x2="20" y2="2" />
+        <line x1="16" y1="18" x2="21" y2="13" />
+      </g>
+      <text x="44" y="24" class="card-title">THE 30-SECOND DOWNLOAD</text>
+    </g>
+
+    <text x="45" y="100" class="body-lead">
+      <tspan x="45" dy="0">I engineer resilient full-stack systems, custom cryptographic identity protocols, and autonomous AI agent workflows — then</tspan>
+      <tspan x="45" dy="22">wrap them in high-converting, pixel-perfect design systems. Zero boilerplate fluff, zero sloppy layouts.</tspan>
+    </text>
+
+    <!-- Bullets -->
+    <g transform="translate(45, 160)">
+      <circle cx="7" cy="7" r="5" fill="#1489CA" />
+      <text x="22" y="11">
+        <tspan class="bullet-bold">Architectural Depth: </tspan>
+        <tspan class="bullet-desc">From engineering in-house enterprise OAuth2 Identity Providers (IdP) with cryptographic JWT/JWE lifecycles,</tspan>
+      </text>
+      <text x="22" y="29" class="bullet-desc">to orchestrating local AI agent CLI execution environments with real-time WebSocket pipelines.</text>
+    </g>
+
+    <g transform="translate(45, 208)">
+      <circle cx="7" cy="7" r="5" fill="#FF7704" />
+      <text x="22" y="11">
+        <tspan class="bullet-bold">Agentic AI &amp; RAG: </tspan>
+        <tspan class="bullet-desc">Creator of ENVI, an autonomous AI portfolio command center featuring 5-tier zero-downtime failover,</tspan>
+      </text>
+      <text x="22" y="29" class="bullet-desc">Python FastAPI, LangGraph StateGraphs, and ChromaDB 768-dimensional vector retrieval.</text>
+    </g>
+
+    <g transform="translate(45, 256)">
+      <circle cx="7" cy="7" r="5" fill="#0A5B9E" />
+      <text x="22" y="11">
+        <tspan class="bullet-bold">Visual Instincts: </tspan>
+        <tspan class="bullet-desc">3rd Runner-Up nationwide in the Government of India / MyGov IHRC National Logo Design Competition.</tspan>
+      </text>
+      <text x="22" y="29" class="bullet-desc">Every layout I ship is disciplined, responsive, and performance-tuned.</text>
+    </g>
+
+    <g transform="translate(45, 304)">
+      <circle cx="7" cy="7" r="5" fill="#070A12" />
+      <text x="22" y="11">
+        <tspan class="bullet-bold">Academic Rigor: </tspan>
+        <tspan class="bullet-desc">Master of Computer Applications (75% First Class Distinction) &amp; BSc Biotechnology (92% Distinction Honours).</tspan>
+      </text>
+    </g>
+
+    <!-- Bottom Callout Bar -->
+    <g transform="translate(0, 370)">
+      <rect x="0" y="0" width="880" height="60" fill="#FF7704" />
+      <text x="50%" y="36" text-anchor="middle" class="quote-text">"Most developers either dread CSS or run away from distributed backend logic. I live comfortably in the middle."</text>
+    </g>
+  </g>
+</svg>

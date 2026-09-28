@@ -8,7 +8,7 @@
   <!-- Interactive Clickable Action Links -->
   <p align="center">
     <a href="https://nonanda-verma-web-portfolio.vercel.app" target="_blank">
-      <b>🌐 Launch Live Portfolio & ENVI AI ↗</b>
+      <b>🌐 Launch Live Portfolio &amp; ENVI AI ↗</b>
     </a>
     &nbsp;&nbsp;&nbsp;&nbsp;•&nbsp;&nbsp;&nbsp;&nbsp;
     <a href="https://www.linkedin.com/in/nonanda-verma-a73468249/" target="_blank">

@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 1930" width="100%" height="1930">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 2150" width="100%" height="2150">
   <defs>
     <!-- Master Brochure Cyan-Blue Canvas Gradient -->
     <linearGradient id="brochureBg" x1="0%" y1="0%" x2="0%" y2="100%">
@@ -33,24 +33,17 @@
 
     <!-- Card Soft Drop Shadow Filter -->
     <filter id="cardShadow" x="-10%" y="-10%" width="120%" height="125%">
-      <feDropShadow dx="0" dy="12" stdDeviation="16" flood-color="#000000" flood-opacity="0.22" />
+      <feDropShadow dx="0" dy="14" stdDeviation="18" flood-color="#000000" flood-opacity="0.22" />
     </filter>
 
-    <!-- Typewriter ClipPath: reveals text smoothly from left to right -->
-    <clipPath id="typeClip">
-      <rect x="180" y="90" width="0" height="40">
-        <animate attributeName="width" values="0; 0; 560; 560; 0" keyTimes="0; 0.08; 0.50; 0.88; 1" dur="5.5s" repeatCount="indefinite" />
-      </rect>
-    </clipPath>
-
     <!-- Clip Paths for Cards -->
-    <clipPath id="cardClip1"><rect x="40" y="275" width="840" height="440" rx="24" /></clipPath>
-    <clipPath id="cardClip2"><rect x="40" y="775" width="840" height="455" rx="24" /></clipPath>
-    <clipPath id="cardClip3"><rect x="40" y="1285" width="840" height="455" rx="24" /></clipPath>
+    <clipPath id="cardClip1"><rect x="40" y="310" width="840" height="490" rx="26" /></clipPath>
+    <clipPath id="cardClip2"><rect x="40" y="870" width="840" height="510" rx="26" /></clipPath>
+    <clipPath id="cardClip3"><rect x="40" y="1450" width="840" height="510" rx="26" /></clipPath>
 
     <!-- Master Clip for Rounded Canvas & Animated Waves -->
-    <clipPath id="masterClip"><rect x="0" y="0" width="920" height="1930" rx="26" /></clipPath>
-    <clipPath id="waveClip"><rect x="0" y="1765" width="920" height="165" rx="26" /></clipPath>
+    <clipPath id="masterClip"><rect x="0" y="0" width="920" height="2150" rx="28" /></clipPath>
+    <clipPath id="waveClip"><rect x="0" y="2000" width="920" height="150" rx="28" /></clipPath>
   </defs>
 
   <style>
@@ -66,21 +59,21 @@
     }
     @keyframes titleGlow {
       0%, 100% { filter: drop-shadow(0 4px 12px rgba(1, 0, 19, 0.3)); }
-      50% { filter: drop-shadow(0 6px 20px rgba(255, 119, 4, 0.45)); }
+      50% { filter: drop-shadow(0 6px 22px rgba(255, 119, 4, 0.5)); }
     }
     .panel-container {
       animation: panelBreathe 5s ease-in-out infinite;
     }
     .main-title {
       font-family: -apple-system, BlinkMacSystemFont, 'Montserrat', 'Segoe UI', Roboto, sans-serif;
-      font-size: 46px;
+      font-size: 48px;
       font-weight: 900;
       letter-spacing: 2.5px;
       text-transform: uppercase;
       fill: url(#titleShimmer);
       animation: titleGlow 4s ease-in-out infinite;
     }
-    .subtitle {
+    .subtitle-line {
       font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
       font-size: 15.5px;
       font-weight: 700;
@@ -97,7 +90,7 @@
     }
     .card-title {
       font-family: -apple-system, BlinkMacSystemFont, 'Montserrat', 'Segoe UI', Roboto, sans-serif;
-      font-size: 24px;
+      font-size: 25px;
       font-weight: 900;
       letter-spacing: 1px;
       text-transform: uppercase;
@@ -105,32 +98,32 @@
     }
     .body-lead {
       font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-      font-size: 14.5px;
-      line-height: 1.6;
+      font-size: 15px;
+      line-height: 1.65;
       font-weight: 500;
       fill: #334155;
     }
     .bullet-bold {
       font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-      font-size: 13.5px;
+      font-size: 14px;
       font-weight: 700;
       fill: #0F172A;
     }
     .bullet-desc {
       font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-      font-size: 13.5px;
+      font-size: 14px;
       font-weight: 400;
       fill: #475569;
     }
     .quote-text {
       font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-      font-size: 14.5px;
+      font-size: 15px;
       font-weight: 600;
       fill: #FFFFFF;
     }
     .quad-title {
       font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-      font-size: 15px;
+      font-size: 15.5px;
       font-weight: 800;
       letter-spacing: 0.5px;
       text-transform: uppercase;
@@ -138,7 +131,7 @@
     }
     .quad-sub {
       font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-      font-size: 12.5px;
+      font-size: 13px;
       font-style: italic;
       fill: #64748B;
     }
@@ -151,57 +144,64 @@
     }
     .proj-title {
       font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-      font-size: 15px;
+      font-size: 15.5px;
       font-weight: 800;
       fill: #0F172A;
     }
     .proj-tags {
       font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-      font-size: 11.5px;
+      font-size: 12px;
       font-weight: 700;
       letter-spacing: 0.6px;
       fill: #1489CA;
     }
     .proj-desc {
       font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-      font-size: 13px;
+      font-size: 13.5px;
       font-weight: 400;
-      line-height: 1.5;
+      line-height: 1.55;
       fill: #475569;
     }
   </style>
 
   <g clip-path="url(#masterClip)">
     <!-- 1. FULL BROCHURE BLUE CANVAS WITH BREATHING BORDER -->
-    <rect x="0" y="0" width="920" height="1930" fill="url(#brochureBg)" />
-    <rect class="panel-container" x="3" y="3" width="914" height="1924" rx="24" fill="none" stroke="url(#borderFlow)" stroke-width="2.5" />
+    <rect x="0" y="0" width="920" height="2150" fill="url(#brochureBg)" />
+    <rect class="panel-container" x="3" y="3" width="914" height="2144" rx="26" fill="none" stroke="url(#borderFlow)" stroke-width="2.5" />
 
     <!-- ==================================================== -->
     <!-- TOP HERO SECTION (Spacious, Centered & Animated)    -->
     <!-- ==================================================== -->
-    <g transform="translate(0, 42)">
+    <g transform="translate(0, 48)">
       <!-- Main Title: Nonanda Verma -->
       <text x="50%" y="45" text-anchor="middle" class="main-title">NONANDA VERMA</text>
 
-      <!-- Fast Typewriter Animated Subtitle -->
-      <g clip-path="url(#typeClip)">
-        <text x="50%" y="78" text-anchor="middle" class="subtitle">DESIGNER BY EYE. DEVELOPER BY CODE.</text>
+      <!-- Alternating Typewriter Lines: Automatically cycles through 3 titles! -->
+      <g transform="translate(0, 80)">
+        <!-- Line 1: DESIGNER BY EYE. DEVELOPER BY CODE. -->
+        <text x="50%" y="0" text-anchor="middle" class="subtitle-line">
+          <animate attributeName="opacity" values="0; 1; 1; 0; 0; 0; 0" keyTimes="0; 0.06; 0.30; 0.35; 0.95; 0.98; 1" dur="9s" repeatCount="indefinite" />
+          DESIGNER BY EYE. DEVELOPER BY CODE.
+        </text>
+        <!-- Line 2: FULL-STACK ARCHITECT + AI SYSTEMS ENGINEER -->
+        <text x="50%" y="0" text-anchor="middle" class="subtitle-line">
+          <animate attributeName="opacity" values="0; 0; 0; 1; 1; 0; 0" keyTimes="0; 0.34; 0.38; 0.44; 0.65; 0.70; 1" dur="9s" repeatCount="indefinite" />
+          FULL-STACK ARCHITECT + AI SYSTEMS ENGINEER
+        </text>
+        <!-- Line 3: RESILIENT ARCHITECTURES WITH BESPOKE AESTHETICS -->
+        <text x="50%" y="0" text-anchor="middle" class="subtitle-line">
+          <animate attributeName="opacity" values="0; 0; 0; 0; 0; 1; 0" keyTimes="0; 0.68; 0.72; 0.76; 0.79; 0.95; 1" dur="9s" repeatCount="indefinite" />
+          RESILIENT ARCHITECTURES WITH BESPOKE AESTHETICS
+        </text>
       </g>
 
-      <!-- Typewriter Blinking Cursor Follower -->
-      <line x1="180" y1="62" x2="180" y2="84" stroke="#FF7704" stroke-width="3" stroke-linecap="round">
-        <animate attributeName="x1" values="180; 180; 740; 740; 180" keyTimes="0; 0.08; 0.50; 0.88; 1" dur="5.5s" repeatCount="indefinite" />
-        <animate attributeName="x2" values="180; 180; 740; 740; 180" keyTimes="0; 0.08; 0.50; 0.88; 1" dur="5.5s" repeatCount="indefinite" />
-        <animate attributeName="opacity" values="1; 0; 1; 0; 1" dur="0.8s" repeatCount="indefinite" />
-      </line>
-
       <!-- Centered Divider Line with Breathing Opacity -->
-      <line x1="220" y1="98" x2="700" y2="98" stroke="#FFFFFF" stroke-width="1.5" stroke-opacity="0.8">
+      <line x1="220" y1="102" x2="700" y2="102" stroke="#FFFFFF" stroke-width="1.5" stroke-opacity="0.8">
         <animate attributeName="stroke-opacity" values="0.4; 0.9; 0.4" dur="4s" repeatCount="indefinite" />
       </line>
 
       <!-- 3 Spacious Pill Buttons (Centered with generous gaps) -->
-      <g transform="translate(225, 122)">
+      <g transform="translate(225, 128)">
         <rect x="0" y="0" width="135" height="42" rx="21" fill="#0A5B9E" stroke="#FFFFFF" stroke-width="1.8" />
         <text x="67.5" y="26" text-anchor="middle" class="btn-text">LINKEDIN</text>
 
@@ -214,14 +214,14 @@
     </g>
 
     <!-- ==================================================== -->
-    <!-- CARD 1: THE 30-SECOND DOWNLOAD (Generous 55px Gap)   -->
+    <!-- CARD 1: THE 30-SECOND DOWNLOAD (Generous Spacing)    -->
     <!-- ==================================================== -->
     <g clip-path="url(#cardClip1)">
       <!-- White Card Container -->
-      <rect x="40" y="275" width="840" height="440" rx="24" fill="#FFFFFF" filter="url(#cardShadow)" />
+      <rect x="40" y="310" width="840" height="490" rx="26" fill="#FFFFFF" filter="url(#cardShadow)" />
 
       <!-- Card Header: Animated Ticking Timer Icon & Bold Title -->
-      <g transform="translate(80, 312)">
+      <g transform="translate(85, 355)">
         <g stroke="#FF7704" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round">
           <circle cx="16" cy="18" r="13">
             <animate attributeName="r" values="13; 14.5; 13" dur="2s" repeatCount="indefinite" />
@@ -233,63 +233,63 @@
         <text x="46" y="25" class="card-title">THE 30-SECOND DOWNLOAD</text>
       </g>
 
-      <!-- Lead Paragraph -->
-      <text x="80" y="372" class="body-lead">
-        <tspan x="80" dy="0">I engineer resilient full-stack systems, custom cryptographic identity protocols, and autonomous AI agent workflows — then</tspan>
-        <tspan x="80" dy="24">wrap them in high-converting, pixel-perfect design systems. Zero boilerplate fluff, zero sloppy layouts.</tspan>
+      <!-- Lead Paragraph with Generous White Space -->
+      <text x="85" y="415" class="body-lead">
+        <tspan x="85" dy="0">I engineer resilient full-stack systems, custom cryptographic identity protocols, and autonomous AI agent workflows — then</tspan>
+        <tspan x="85" dy="25">wrap them in high-converting, pixel-perfect design systems. Zero boilerplate fluff, zero sloppy layouts.</tspan>
       </text>
 
-      <!-- Bullet Points (Spaced comfortably by 50px) -->
-      <g transform="translate(80, 434)">
-        <circle cx="7" cy="7" r="5" fill="#1489CA" />
-        <text x="24" y="11">
+      <!-- Bullet Points (Spaced by generous 54px gaps) -->
+      <g transform="translate(85, 482)">
+        <circle cx="7" cy="7" r="5.5" fill="#1489CA" />
+        <text x="25" y="11">
           <tspan class="bullet-bold">Architectural Depth: </tspan>
           <tspan class="bullet-desc">From engineering in-house enterprise OAuth2 Identity Providers (IdP) with cryptographic JWT/JWE lifecycles,</tspan>
         </text>
-        <text x="24" y="28" class="bullet-desc">to orchestrating local AI agent CLI execution environments with real-time WebSocket pipelines.</text>
+        <text x="25" y="29" class="bullet-desc">to orchestrating local AI agent CLI execution environments with real-time WebSocket pipelines.</text>
       </g>
 
-      <g transform="translate(80, 484)">
-        <circle cx="7" cy="7" r="5" fill="#FF7704" />
-        <text x="24" y="11">
+      <g transform="translate(85, 536)">
+        <circle cx="7" cy="7" r="5.5" fill="#FF7704" />
+        <text x="25" y="11">
           <tspan class="bullet-bold">Agentic AI &amp; RAG: </tspan>
           <tspan class="bullet-desc">Creator of ENVI, an autonomous AI portfolio command center featuring 5-tier zero-downtime failover,</tspan>
         </text>
-        <text x="24" y="28" class="bullet-desc">Python FastAPI, LangGraph StateGraphs, and ChromaDB 768-dimensional vector retrieval.</text>
+        <text x="25" y="29" class="bullet-desc">Python FastAPI, LangGraph StateGraphs, and ChromaDB 768-dimensional vector retrieval.</text>
       </g>
 
-      <g transform="translate(80, 534)">
-        <circle cx="7" cy="7" r="5" fill="#0A5B9E" />
-        <text x="24" y="11">
+      <g transform="translate(85, 590)">
+        <circle cx="7" cy="7" r="5.5" fill="#0A5B9E" />
+        <text x="25" y="11">
           <tspan class="bullet-bold">Visual Instincts: </tspan>
           <tspan class="bullet-desc">3rd Runner-Up nationwide in the Government of India / MyGov IHRC National Logo Design Competition.</tspan>
         </text>
-        <text x="24" y="28" class="bullet-desc">Every layout I ship is disciplined, responsive, and performance-tuned.</text>
+        <text x="25" y="29" class="bullet-desc">Every layout I ship is disciplined, responsive, and performance-tuned.</text>
       </g>
 
-      <g transform="translate(80, 584)">
-        <circle cx="7" cy="7" r="5" fill="#070A12" />
-        <text x="24" y="11">
+      <g transform="translate(85, 644)">
+        <circle cx="7" cy="7" r="5.5" fill="#070A12" />
+        <text x="25" y="11">
           <tspan class="bullet-bold">Academic Rigor: </tspan>
           <tspan class="bullet-desc">Master of Computer Applications (75% First Class Distinction) &amp; BSc Biotechnology (92% Distinction Honours).</tspan>
         </text>
       </g>
 
-      <!-- Bottom Orange Quote Bar -->
-      <g transform="translate(40, 655)">
-        <rect x="0" y="0" width="840" height="60" fill="#FF7704" />
-        <text x="50%" y="37" text-anchor="middle" class="quote-text" font-style="italic">"Most developers either dread CSS or run away from distributed backend logic. I live comfortably in the middle."</text>
+      <!-- Bottom Orange Quote Bar (Generous Height & Margin) -->
+      <g transform="translate(40, 725)">
+        <rect x="0" y="0" width="840" height="65" fill="#FF7704" />
+        <text x="50%" y="40" text-anchor="middle" class="quote-text" font-style="italic">"Most developers either dread CSS or run away from distributed backend logic. I live comfortably in the middle."</text>
       </g>
     </g>
 
     <!-- ==================================================== -->
-    <!-- CARD 2: PRODUCTION ARCHITECTURE & STACK (Gap: 60px)  -->
+    <!-- CARD 2: PRODUCTION ARCHITECTURE & STACK (Gap: 70px)  -->
     <!-- ==================================================== -->
     <g clip-path="url(#cardClip2)">
-      <rect x="40" y="775" width="840" height="455" rx="24" fill="#FFFFFF" filter="url(#cardShadow)" />
+      <rect x="40" y="870" width="840" height="510" rx="26" fill="#FFFFFF" filter="url(#cardShadow)" />
 
       <!-- Card Header -->
-      <g transform="translate(80, 814)">
+      <g transform="translate(85, 915)">
         <g stroke="#FF7704" stroke-width="2.8" fill="none" stroke-linecap="round" stroke-linejoin="round">
           <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/>
         </g>
@@ -297,10 +297,10 @@
       </g>
 
       <!-- Quadrant 1: Frontend & Edge Delivery -->
-      <g transform="translate(80, 870)">
+      <g transform="translate(85, 975)">
         <text x="0" y="16" class="quad-title">⚡ Frontend &amp; Edge Delivery</text>
-        <text x="0" y="35" class="quad-sub">Pixel-perfect, accessible, 60fps edge rendering</text>
-        <g transform="translate(0, 50)">
+        <text x="0" y="37" class="quad-sub">Pixel-perfect, accessible, 60fps edge rendering</text>
+        <g transform="translate(0, 52)">
           <rect x="0" y="0" width="92" height="28" rx="14" fill="#070A12" /><text x="46" y="18" text-anchor="middle" class="badge-text">Next.js 16</text>
           <rect x="100" y="0" width="84" height="28" rx="14" fill="#1489CA" /><text x="142" y="18" text-anchor="middle" class="badge-text">React 19</text>
           <rect x="192" y="0" width="88" height="28" rx="14" fill="#D97706" /><text x="236" y="18" text-anchor="middle" class="badge-text">JavaScript</text>
@@ -309,10 +309,10 @@
       </g>
 
       <!-- Quadrant 2: Backend, Systems & APIs -->
-      <g transform="translate(485, 870)">
+      <g transform="translate(495, 975)">
         <text x="0" y="16" class="quad-title">⚙️ Backend, Systems &amp; APIs</text>
-        <text x="0" y="35" class="quad-sub">Distributed microservices &amp; cryptographic security</text>
-        <g transform="translate(0, 50)">
+        <text x="0" y="37" class="quad-sub">Distributed microservices &amp; cryptographic security</text>
+        <g transform="translate(0, 52)">
           <rect x="0" y="0" width="118" height="28" rx="14" fill="#059669" /><text x="59" y="18" text-anchor="middle" class="badge-text">Python FastAPI</text>
           <rect x="126" y="0" width="76" height="28" rx="14" fill="#16A34A" /><text x="164" y="18" text-anchor="middle" class="badge-text">Node.js</text>
           <rect x="210" y="0" width="78" height="28" rx="14" fill="#070A12" /><text x="249" y="18" text-anchor="middle" class="badge-text">ColdBox</text>
@@ -320,11 +320,11 @@
         </g>
       </g>
 
-      <!-- Quadrant 3: Agentic AI & Vector Intelligence -->
-      <g transform="translate(80, 1005)">
+      <!-- Quadrant 3: Agentic AI & Vector Intelligence (65px row gap) -->
+      <g transform="translate(85, 1120)">
         <text x="0" y="16" class="quad-title">🤖 Agentic AI &amp; Vector Intelligence</text>
-        <text x="0" y="35" class="quad-sub">Multi-agent graphs, persistent memory &amp; LLM failover</text>
-        <g transform="translate(0, 50)">
+        <text x="0" y="37" class="quad-sub">Multi-agent graphs, persistent memory &amp; LLM failover</text>
+        <g transform="translate(0, 52)">
           <rect x="0" y="0" width="94" height="28" rx="14" fill="#FF7704" /><text x="47" y="18" text-anchor="middle" class="badge-text">LangGraph</text>
           <rect x="102" y="0" width="94" height="28" rx="14" fill="#DC2626" /><text x="149" y="18" text-anchor="middle" class="badge-text">ChromaDB</text>
           <rect x="204" y="0" width="96" height="28" rx="14" fill="#4D7C0F" /><text x="252" y="18" text-anchor="middle" class="badge-text">NVIDIA NIM</text>
@@ -333,10 +333,10 @@
       </g>
 
       <!-- Quadrant 4: Cloud, DevOps & UI Systems -->
-      <g transform="translate(485, 1005)">
+      <g transform="translate(495, 1120)">
         <text x="0" y="16" class="quad-title">☁️ Cloud, DevOps &amp; UI Systems</text>
-        <text x="0" y="35" class="quad-sub">Containers, edge infrastructure &amp; brand design</text>
-        <g transform="translate(0, 50)">
+        <text x="0" y="37" class="quad-sub">Containers, edge infrastructure &amp; brand design</text>
+        <g transform="translate(0, 52)">
           <rect x="0" y="0" width="76" height="28" rx="14" fill="#0284C7" /><text x="38" y="18" text-anchor="middle" class="badge-text">Docker</text>
           <rect x="84" y="0" width="88" height="28" rx="14" fill="#15803D" /><text x="128" y="18" text-anchor="middle" class="badge-text">MongoDB</text>
           <rect x="180" y="0" width="96" height="28" rx="14" fill="#070A12" /><text x="228" y="18" text-anchor="middle" class="badge-text">Vercel Edge</text>
@@ -345,20 +345,20 @@
       </g>
 
       <!-- Bottom Blue Callout Bar -->
-      <g transform="translate(40, 1170)">
-        <rect x="0" y="0" width="840" height="60" fill="#1489CA" />
-        <text x="50%" y="37" text-anchor="middle" class="quote-text">Production-hardened architectures paired with pixel-perfect visual discipline.</text>
+      <g transform="translate(40, 1245)">
+        <rect x="0" y="0" width="840" height="65" fill="#1489CA" />
+        <text x="50%" y="40" text-anchor="middle" class="quote-text">Production-hardened architectures paired with pixel-perfect visual discipline.</text>
       </g>
     </g>
 
     <!-- ==================================================== -->
-    <!-- CARD 3: FEATURED ENGINEERING SHOWCASE (Gap: 60px)    -->
+    <!-- CARD 3: FEATURED ENGINEERING SHOWCASE (Gap: 70px)    -->
     <!-- ==================================================== -->
     <g clip-path="url(#cardClip3)">
-      <rect x="40" y="1285" width="840" height="455" rx="24" fill="#FFFFFF" filter="url(#cardShadow)" />
+      <rect x="40" y="1450" width="840" height="510" rx="26" fill="#FFFFFF" filter="url(#cardShadow)" />
 
       <!-- Card Header -->
-      <g transform="translate(80, 1324)">
+      <g transform="translate(85, 1495)">
         <g stroke="#FF7704" stroke-width="2.8" fill="none" stroke-linecap="round" stroke-linejoin="round">
           <path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09z"/>
           <path d="M12 15l-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 0 1-4 2z"/>
@@ -367,63 +367,66 @@
       </g>
 
       <!-- Project 1 -->
-      <g transform="translate(80, 1380)">
+      <g transform="translate(85, 1555)">
         <text x="0" y="16" class="proj-title">🚀 Portfolio &amp; ENVI AI Command Center</text>
-        <text x="0" y="34" class="proj-tags">NEXT.JS 16 • FASTAPI • LANGGRAPH • CHROMADB</text>
-        <text x="0" y="54" class="proj-desc">5-tier zero-downtime LLM failover, 768-dim vector RAG memory,</text>
-        <text x="0" y="72" class="proj-desc">and Cloudinary edge asset compression (f_auto, q_auto).</text>
+        <text x="0" y="37" class="proj-tags">NEXT.JS 16 • FASTAPI • LANGGRAPH • CHROMADB</text>
+        <text x="0" y="58" class="proj-desc">5-tier zero-downtime LLM failover, 768-dim vector RAG memory,</text>
+        <text x="0" y="78" class="proj-desc">and Cloudinary edge asset compression (f_auto, q_auto).</text>
       </g>
 
       <!-- Project 2 -->
-      <g transform="translate(485, 1380)">
+      <g transform="translate(495, 1555)">
         <text x="0" y="16" class="proj-title">🔐 Custom OAuth2 Identity Provider (IdP)</text>
-        <text x="0" y="34" class="proj-tags">COLDBOX • JWT / JWE • RSA-256 ROTATION • MSSQL</text>
-        <text x="0" y="54" class="proj-desc">RFC 6749 compliant PKCE auth server with automated PEM key</text>
-        <text x="0" y="72" class="proj-desc">rotation, eliminating recurring commercial identity SaaS costs.</text>
+        <text x="0" y="37" class="proj-tags">COLDBOX • JWT / JWE • RSA-256 ROTATION • MSSQL</text>
+        <text x="0" y="58" class="proj-desc">RFC 6749 compliant PKCE auth server with automated PEM key</text>
+        <text x="0" y="78" class="proj-desc">rotation, eliminating recurring commercial identity SaaS costs.</text>
       </g>
 
-      <!-- Project 3 -->
-      <g transform="translate(80, 1515)">
+      <!-- Project 3 (65px row gap) -->
+      <g transform="translate(85, 1700)">
         <text x="0" y="16" class="proj-title">⚡ Agentic SSH Terminal Orchestrator</text>
-        <text x="0" y="34" class="proj-tags">NODE.JS • EXPRESS • XTERM.JS • LOCAL OLLAMA</text>
-        <text x="0" y="54" class="proj-desc">Sub-10ms bi-directional WebSocket ANSI streaming bridge routing</text>
-        <text x="0" y="72" class="proj-desc">autonomous CLI agent workflows with persistent Tmux sessions.</text>
+        <text x="0" y="37" class="proj-tags">NODE.JS • EXPRESS • XTERM.JS • LOCAL OLLAMA</text>
+        <text x="0" y="58" class="proj-desc">Sub-10ms bi-directional WebSocket ANSI streaming bridge routing</text>
+        <text x="0" y="78" class="proj-desc">autonomous CLI agent workflows with persistent Tmux sessions.</text>
       </g>
 
       <!-- Project 4 -->
-      <g transform="translate(485, 1515)">
+      <g transform="translate(495, 1700)">
         <text x="0" y="16" class="proj-title">📊 Schema-Driven Dynamic Dashboard</text>
-        <text x="0" y="34" class="proj-tags">REACT • PLOTLY.JS • RECHARTS • MONGODB ATLAS</text>
-        <text x="0" y="54" class="proj-desc">Low-code data analytics engine dynamically transforming raw JSON</text>
-        <text x="0" y="72" class="proj-desc">and Mongo schemas into multi-axis charts with zero frontend rebuilds.</text>
+        <text x="0" y="37" class="proj-tags">REACT • PLOTLY.JS • RECHARTS • MONGODB ATLAS</text>
+        <text x="0" y="58" class="proj-desc">Low-code data analytics engine dynamically transforming raw JSON</text>
+        <text x="0" y="78" class="proj-desc">and Mongo schemas into multi-axis charts with zero frontend rebuilds.</text>
       </g>
 
       <!-- Bottom Dark Callout Bar -->
-      <g transform="translate(40, 1680)">
-        <rect x="0" y="0" width="840" height="60" fill="#070A12" />
-        <text x="50%" y="37" text-anchor="middle" class="quote-text">Engineered for fault-tolerance, sub-second latency, and measurable impact.</text>
+      <g transform="translate(40, 1825)">
+        <rect x="0" y="0" width="840" height="65" fill="#070A12" />
+        <text x="50%" y="40" text-anchor="middle" class="quote-text">Engineered for fault-tolerance, sub-second latency, and measurable impact.</text>
       </g>
     </g>
 
     <!-- ==================================================== -->
-    <!-- DYNAMIC ANIMATED WAVE RIBBON FOOTER (Undulating!)    -->
+    <!-- DYNAMIC UNDULATING WAVE FOOTER (NO BROKEN EDGES!)    -->
     <!-- ==================================================== -->
     <g clip-path="url(#waveClip)">
-      <rect x="0" y="1765" width="920" height="165" fill="#1489CA" />
+      <rect x="0" y="2000" width="920" height="150" fill="#1489CA" />
 
-      <!-- Layer 1: White Dynamic Looping Wave -->
-      <path d="M 0 1820 Q 230 1875 460 1820 T 920 1820 Q 1150 1875 1380 1820 T 1840 1820 L 1840 1930 L 0 1930 Z" fill="#FFFFFF" opacity="0.95">
-        <animateTransform attributeName="transform" type="translate" from="0,0" to="-920,0" dur="14s" repeatCount="indefinite" />
+      <!-- Layer 1: White Undulating Rolling Wave (Seamless Morphing) -->
+      <path fill="#FFFFFF" opacity="0.95">
+        <animate attributeName="d" dur="8s" repeatCount="indefinite"
+          values="M 0 2050 Q 230 2100 460 2050 T 920 2050 L 920 2150 L 0 2150 Z; M 0 2070 Q 230 2025 460 2070 T 920 2070 L 920 2150 L 0 2150 Z; M 0 2050 Q 230 2100 460 2050 T 920 2050 L 920 2150 L 0 2150 Z" />
       </path>
 
-      <!-- Layer 2: Deep Navy Looping Wave -->
-      <path d="M 0 1845 Q 230 1895 460 1845 T 920 1845 Q 1150 1895 1380 1845 T 1840 1845 L 1840 1930 L 0 1930 Z" fill="#070A12" opacity="0.95">
-        <animateTransform attributeName="transform" type="translate" from="-460,0" to="-1380,0" dur="10s" repeatCount="indefinite" />
+      <!-- Layer 2: Deep Navy Rolling Wave (Seamless Morphing - ZERO CUTOFF!) -->
+      <path fill="#070A12" opacity="0.95">
+        <animate attributeName="d" dur="6s" repeatCount="indefinite"
+          values="M 0 2075 Q 230 2035 460 2085 T 920 2075 L 920 2150 L 0 2150 Z; M 0 2090 Q 230 2125 460 2065 T 920 2090 L 920 2150 L 0 2150 Z; M 0 2075 Q 230 2035 460 2085 T 920 2075 L 920 2150 L 0 2150 Z" />
       </path>
 
-      <!-- Layer 3: Vibrant Orange Swoosh Wave -->
-      <path d="M 0 1865 Q 230 1910 460 1865 T 920 1865 Q 1150 1910 1380 1865 T 1840 1865 L 1840 1930 L 0 1930 Z" fill="#FF7704">
-        <animateTransform attributeName="transform" type="translate" from="0,0" to="-920,0" dur="7s" repeatCount="indefinite" />
+      <!-- Layer 3: Vibrant Orange Swoosh Wave (Seamless Morphing) -->
+      <path fill="#FF7704">
+        <animate attributeName="d" dur="5s" repeatCount="indefinite"
+          values="M 0 2098 Q 230 2140 460 2098 T 920 2108 L 920 2150 L 0 2150 Z; M 0 2112 Q 230 2075 460 2120 T 920 2102 L 920 2150 L 0 2150 Z; M 0 2098 Q 230 2140 460 2098 T 920 2108 L 920 2150 L 0 2150 Z" />
       </path>
     </g>
   </g>

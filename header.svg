@@ -1,0 +1,87 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 280" width="100%" height="280">
+  <defs>
+    <!-- Outer animated border gradient cycling through portfolio palette -->
+    <linearGradient id="borderGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1887C7">
+        <animate attributeName="stop-color" values="#1887C7;#FF7704;#F6530F;#1887C7" dur="6s" repeatCount="indefinite" />
+      </stop>
+      <stop offset="50%" stop-color="#FF7704">
+        <animate attributeName="stop-color" values="#FF7704;#F6530F;#1887C7;#FF7704" dur="6s" repeatCount="indefinite" />
+      </stop>
+      <stop offset="100%" stop-color="#F6530F">
+        <animate attributeName="stop-color" values="#F6530F;#1887C7;#FF7704;#F6530F" dur="6s" repeatCount="indefinite" />
+      </stop>
+    </linearGradient>
+
+    <!-- Inner banner gradient: Electric Cyan to Vibrant Orange to Sunset Flame -->
+    <linearGradient id="bannerGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#1887C7" />
+      <stop offset="68%" stop-color="#FF7704" />
+      <stop offset="100%" stop-color="#F6530F" />
+    </linearGradient>
+
+    <!-- Soft ambient drop shadow -->
+    <filter id="cardShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#FF7704" flood-opacity="0.25" />
+    </filter>
+  </defs>
+
+  <style>
+    @keyframes pulseGlow {
+      0% { stroke-opacity: 0.65; stroke-width: 2.2; }
+      50% { stroke-opacity: 1; stroke-width: 3.8; }
+      100% { stroke-opacity: 0.65; stroke-width: 2.2; }
+    }
+    @keyframes textShimmer {
+      0% { opacity: 0.88; transform: translateY(0px); }
+      50% { opacity: 1; transform: translateY(-1.5px); }
+      100% { opacity: 0.88; transform: translateY(0px); }
+    }
+    .outer-card {
+      animation: pulseGlow 4s ease-in-out infinite;
+    }
+    .main-title {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      font-size: 52px;
+      font-weight: 800;
+      letter-spacing: -0.5px;
+      fill: #ffffff;
+      text-shadow: 0 4px 14px rgba(1, 0, 19, 0.45);
+    }
+    .tagline {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      font-size: 21px;
+      font-weight: 600;
+      letter-spacing: 0.8px;
+      fill: #ffffff;
+      animation: textShimmer 3s ease-in-out infinite;
+    }
+    .sub-badge-text {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      font-size: 13px;
+      font-weight: 600;
+      letter-spacing: 1.2px;
+      text-transform: uppercase;
+      fill: #FF7704;
+    }
+  </style>
+
+  <!-- 1. Outer Container: Dark surface, gentle rounded corners (rx=16), animated glowing border -->
+  <rect class="outer-card" x="8" y="8" width="884" height="264" rx="16" ry="16" fill="#070A12" stroke="url(#borderGrad)" stroke-width="2.5" filter="url(#cardShadow)" />
+
+  <!-- 2. Inside Banner: Gentle subtle corners (rx=10 - not overly curvy), brand gradient -->
+  <rect x="22" y="22" width="856" height="236" rx="10" ry="10" fill="url(#bannerGrad)" />
+  <rect x="22" y="22" width="856" height="236" rx="10" ry="10" fill="none" stroke="rgba(255, 255, 255, 0.22)" stroke-width="1" />
+
+  <!-- Main Name Heading -->
+  <text x="50%" y="112" text-anchor="middle" class="main-title">Nonanda Verma</text>
+
+  <!-- Animated Heading Subtitle -->
+  <text x="50%" y="160" text-anchor="middle" class="tagline">Designer by Eye  •  Developer by Code</text>
+
+  <!-- Center Floating Tech Pill -->
+  <g transform="translate(245, 186)">
+    <rect x="0" y="0" width="410" height="32" rx="16" ry="16" fill="rgba(1, 0, 19, 0.72)" stroke="rgba(255, 255, 255, 0.22)" stroke-width="1" />
+    <text x="205" y="21" text-anchor="middle" class="sub-badge-text">Full-Stack Architect + AI Systems Engineer</text>
+  </g>
+</svg>

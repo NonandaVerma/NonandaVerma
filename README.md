@@ -1,4 +1,28 @@
 <div align="center">
+  <!-- Outer Card Banner with Animated Border & Subtle Curves -->
+  <img src="./header.svg" width="100%" alt="Nonanda Verma Banner" />
+  <br /><br />
+  <!-- Padded, Soft Modern Pill Buttons -->
+  <p align="center">
+    <a href="https://nonanda-verma-web-portfolio.vercel.app" target="_blank" rel="noopener noreferrer">
+      <img src="./btn-portfolio.svg" height="42" alt="Live Portfolio" />
+    </a>
+    &nbsp;&nbsp;&nbsp;
+    <a href="https://www.linkedin.com/in/nonanda-verma-a73468249/" target="_blank" rel="noopener noreferrer">
+      <img src="./btn-linkedin.svg" height="42" alt="LinkedIn" />
+    </a>
+    &nbsp;&nbsp;&nbsp;
+    <a href="mailto:nonandaverma@gmail.com">
+      <img src="./btn-collaborate.svg" height="42" alt="Let's Collaborate" />
+    </a>
+    &nbsp;&nbsp;&nbsp;
+    <a href="https://nonanda-verma-web-portfolio.vercel.app/#assistant" target="_blank" rel="noopener noreferrer">
+      <img src="./btn-assistant.svg" height="42" alt="Talk to ENVI AI" />
+    </a>
+  </p>
+</div>
+
+<div align="center">
 
   <!-- Soft Rounded Curved Hero Banner -->
   <img src="https://capsule-render.vercel.app/api?type=rounded&color=0:1887C7,70:FF7704,100:F6530F&height=230&section=header&text=Nonanda%20Verma&fontSize=62&fontColor=ffffff&fontAlignY=38&desc=Designer%20by%20Eye%20%20%E2%80%A2%20%20Developer%20by%20Code&descSize=20&descColor=ffffff&descAlignY=64&descAlign=50&animation=fadeIn" width="100%" alt="Nonanda Verma Banner" />

@@ -1,0 +1,88 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 780">
+  <defs>
+    <linearGradient id="sBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1489CA" />
+      <stop offset="55%" stop-color="#117EBA" />
+      <stop offset="100%" stop-color="#0E6B9E" />
+    </linearGradient>
+    <linearGradient id="sBorder" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FF7704"><animate attributeName="stop-color" values="#FF7704;#FFFFFF;#1489CA;#FF7704" dur="7s" repeatCount="indefinite" /></stop>
+      <stop offset="50%" stop-color="#FFFFFF"><animate attributeName="stop-color" values="#FFFFFF;#FF7704;#1489CA;#FFFFFF" dur="7s" repeatCount="indefinite" /></stop>
+      <stop offset="100%" stop-color="#1489CA"><animate attributeName="stop-color" values="#1489CA;#F6530F;#FF7704;#1489CA" dur="7s" repeatCount="indefinite" /></stop>
+    </linearGradient>
+    <filter id="sShadow" x="-10%" y="-10%" width="120%" height="125%">
+      <feDropShadow dx="0" dy="12" stdDeviation="16" flood-color="#000000" flood-opacity="0.22" />
+    </filter>
+    <clipPath id="sOuter"><rect x="0" y="0" width="920" height="780" rx="28" /></clipPath>
+    <clipPath id="sCard"><rect x="30" y="30" width="860" height="710" rx="24" /></clipPath>
+  </defs>
+
+  <style>
+    .s-title { font-family: -apple-system, BlinkMacSystemFont, 'Montserrat', 'Segoe UI', Roboto, sans-serif; font-size: 23px; font-weight: 900; letter-spacing: 1px; text-transform: uppercase; fill: #FF7704; }
+    .s-sec-title { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; font-size: 16px; font-weight: 800; letter-spacing: 0.4px; fill: #0F172A; }
+    .s-sec-sub { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; font-size: 13px; font-style: italic; fill: #64748B; }
+    .s-badge { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; font-size: 12px; font-weight: 700; letter-spacing: 0.2px; fill: #FFFFFF; }
+    .s-quote { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; font-size: 15px; font-weight: 600; fill: #FFFFFF; }
+  </style>
+
+  <g clip-path="url(#sOuter)">
+    <rect x="0" y="0" width="920" height="780" fill="url(#sBg)" />
+    <rect x="3" y="3" width="914" height="774" rx="26" fill="none" stroke="url(#sBorder)" stroke-width="2.2">
+      <animate attributeName="stroke-opacity" values="0.55;1;0.55" dur="6s" repeatCount="indefinite" />
+    </rect>
+
+    <g clip-path="url(#sCard)" filter="url(#sShadow)">
+      <rect x="30" y="30" width="860" height="710" rx="24" fill="#FFFFFF" />
+
+      <g transform="translate(85, 58)" stroke="#FF7704" stroke-width="2.6" fill="none" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/>
+      </g>
+      <text x="118" y="90" class="s-title">Production Architecture &amp; Stack</text>
+
+      <!-- Section 1: Frontend -->
+      <text x="85" y="150" class="s-sec-title">⚡ Frontend &amp; Edge Delivery</text>
+      <text x="85" y="174" class="s-sec-sub" textLength="346" lengthAdjust="spacingAndGlyphs">Pixel-perfect, accessible, 60fps edge rendering</text>
+      <g transform="translate(85, 196)">
+        <rect x="0" y="0" width="108" height="28" rx="14" fill="#070A12" /><text x="54" y="18.5" text-anchor="middle" class="s-badge" textLength="76" lengthAdjust="spacingAndGlyphs">Next.js 16</text>
+        <rect x="118" y="0" width="93" height="28" rx="14" fill="#1489CA" /><text x="164.5" y="18.5" text-anchor="middle" class="s-badge" textLength="61" lengthAdjust="spacingAndGlyphs">React 19</text>
+        <rect x="221" y="0" width="108" height="28" rx="14" fill="#D97706" /><text x="275" y="18.5" text-anchor="middle" class="s-badge" textLength="76" lengthAdjust="spacingAndGlyphs">JavaScript</text>
+        <rect x="339" y="0" width="116" height="28" rx="14" fill="#0284C7" /><text x="397" y="18.5" text-anchor="middle" class="s-badge" textLength="84" lengthAdjust="spacingAndGlyphs">Tailwind v4</text>
+      </g>
+
+      <!-- Section 2: Backend -->
+      <text x="85" y="258" class="s-sec-title">⚙️ Backend, Systems &amp; APIs</text>
+      <text x="85" y="282" class="s-sec-sub" textLength="374" lengthAdjust="spacingAndGlyphs">Distributed microservices &amp; cryptographic security</text>
+      <g transform="translate(85, 304)">
+        <rect x="0" y="0" width="138" height="28" rx="14" fill="#059669" /><text x="69" y="18.5" text-anchor="middle" class="s-badge" textLength="106" lengthAdjust="spacingAndGlyphs">Python FastAPI</text>
+        <rect x="148" y="0" width="85" height="28" rx="14" fill="#16A34A" /><text x="190.5" y="18.5" text-anchor="middle" class="s-badge" textLength="53" lengthAdjust="spacingAndGlyphs">Node.js</text>
+        <rect x="243" y="0" width="85" height="28" rx="14" fill="#070A12" /><text x="285.5" y="18.5" text-anchor="middle" class="s-badge" textLength="53" lengthAdjust="spacingAndGlyphs">ColdBox</text>
+        <rect x="338" y="0" width="78" height="28" rx="14" fill="#EA580C" /><text x="377" y="18.5" text-anchor="middle" class="s-badge" textLength="46" lengthAdjust="spacingAndGlyphs">OAuth2</text>
+      </g>
+
+      <!-- Section 3: Agentic AI -->
+      <text x="85" y="366" class="s-sec-title">🤖 Agentic AI &amp; Vector Intelligence</text>
+      <text x="85" y="390" class="s-sec-sub" textLength="382" lengthAdjust="spacingAndGlyphs">Multi-agent graphs, persistent memory &amp; LLM failover</text>
+      <g transform="translate(85, 412)">
+        <rect x="0" y="0" width="100" height="28" rx="14" fill="#FF7704" /><text x="50" y="18.5" text-anchor="middle" class="s-badge" textLength="68" lengthAdjust="spacingAndGlyphs">LangGraph</text>
+        <rect x="110" y="0" width="93" height="28" rx="14" fill="#DC2626" /><text x="156.5" y="18.5" text-anchor="middle" class="s-badge" textLength="61" lengthAdjust="spacingAndGlyphs">ChromaDB</text>
+        <rect x="213" y="0" width="108" height="28" rx="14" fill="#4D7C0F" /><text x="267" y="18.5" text-anchor="middle" class="s-badge" textLength="76" lengthAdjust="spacingAndGlyphs">NVIDIA NIM</text>
+        <rect x="331" y="0" width="78" height="28" rx="14" fill="#070A12" /><text x="370" y="18.5" text-anchor="middle" class="s-badge" textLength="46" lengthAdjust="spacingAndGlyphs">Ollama</text>
+      </g>
+
+      <!-- Section 4: Cloud/DevOps -->
+      <text x="85" y="474" class="s-sec-title">☁️ Cloud, DevOps &amp; UI Systems</text>
+      <text x="85" y="498" class="s-sec-sub" textLength="338" lengthAdjust="spacingAndGlyphs">Containers, edge infrastructure &amp; brand design</text>
+      <g transform="translate(85, 520)">
+        <rect x="0" y="0" width="78" height="28" rx="14" fill="#0284C7" /><text x="39" y="18.5" text-anchor="middle" class="s-badge" textLength="46" lengthAdjust="spacingAndGlyphs">Docker</text>
+        <rect x="88" y="0" width="85" height="28" rx="14" fill="#15803D" /><text x="130.5" y="18.5" text-anchor="middle" class="s-badge" textLength="53" lengthAdjust="spacingAndGlyphs">MongoDB</text>
+        <rect x="183" y="0" width="116" height="28" rx="14" fill="#070A12" /><text x="241" y="18.5" text-anchor="middle" class="s-badge" textLength="84" lengthAdjust="spacingAndGlyphs">Vercel Edge</text>
+        <rect x="309" y="0" width="108" height="28" rx="14" fill="#0A5B9E" /><text x="363" y="18.5" text-anchor="middle" class="s-badge" textLength="76" lengthAdjust="spacingAndGlyphs">UI Systems</text>
+      </g>
+
+      <rect x="30" y="590" width="860" height="70" fill="#1489CA">
+        <animate attributeName="fill" values="#1489CA;#117EBA;#1489CA" dur="6s" repeatCount="indefinite" />
+      </rect>
+      <text x="460" y="632" text-anchor="middle" class="s-quote" textLength="608" lengthAdjust="spacingAndGlyphs">Production-hardened architectures paired with pixel-perfect visual discipline.</text>
+    </g>
+  </g>
+</svg>

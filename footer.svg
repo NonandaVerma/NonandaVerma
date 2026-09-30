@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 180">
+  <defs>
+    <linearGradient id="fBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1489CA" />
+      <stop offset="55%" stop-color="#117EBA" />
+      <stop offset="100%" stop-color="#0E6B9E" />
+    </linearGradient>
+    <linearGradient id="fBorder" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FF7704"><animate attributeName="stop-color" values="#FF7704;#FFFFFF;#1489CA;#FF7704" dur="7s" repeatCount="indefinite" /></stop>
+      <stop offset="50%" stop-color="#FFFFFF"><animate attributeName="stop-color" values="#FFFFFF;#FF7704;#1489CA;#FFFFFF" dur="7s" repeatCount="indefinite" /></stop>
+      <stop offset="100%" stop-color="#1489CA"><animate attributeName="stop-color" values="#1489CA;#F6530F;#FF7704;#1489CA" dur="7s" repeatCount="indefinite" /></stop>
+    </linearGradient>
+    <clipPath id="fOuter"><rect x="0" y="0" width="920" height="180" rx="28" /></clipPath>
+    <clipPath id="fWave"><rect x="0" y="100" width="920" height="80" /></clipPath>
+  </defs>
+
+  <style>
+    .f-sig { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; font-size: 14px; font-weight: 600; font-style: italic; fill: #FFFFFF; }
+  </style>
+
+  <g clip-path="url(#fOuter)">
+    <rect x="0" y="0" width="920" height="180" fill="url(#fBg)" />
+    <rect x="3" y="3" width="914" height="174" rx="26" fill="none" stroke="url(#fBorder)" stroke-width="2.2">
+      <animate attributeName="stroke-opacity" values="0.55;1;0.55" dur="6s" repeatCount="indefinite" />
+    </rect>
+
+    <text x="460" y="54" text-anchor="middle" class="f-sig" textLength="615" lengthAdjust="spacingAndGlyphs">Crafted with intentional design aesthetics and resilient code by Nonanda Verma.</text>
+
+    <g clip-path="url(#fWave)">
+      <path fill="#FFFFFF" opacity="0.95">
+        <animate attributeName="d" dur="8s" repeatCount="indefinite"
+          values="M 0 140 Q 230 175 460 140 T 920 140 L 920 180 L 0 180 Z; M 0 155 Q 230 120 460 155 T 920 155 L 920 180 L 0 180 Z; M 0 140 Q 230 175 460 140 T 920 140 L 920 180 L 0 180 Z" />
+      </path>
+      <path fill="#070A12" opacity="0.95">
+        <animate attributeName="d" dur="6s" repeatCount="indefinite"
+          values="M 0 152 Q 230 130 460 158 T 920 152 L 920 180 L 0 180 Z; M 0 165 Q 230 178 460 148 T 920 165 L 920 180 L 0 180 Z; M 0 152 Q 230 130 460 158 T 920 152 L 920 180 L 0 180 Z" />
+      </path>
+      <path fill="#FF7704">
+        <animate attributeName="d" dur="5s" repeatCount="indefinite"
+          values="M 0 166 Q 230 180 460 166 T 920 172 L 920 180 L 0 180 Z; M 0 174 Q 230 158 460 178 T 920 168 L 920 180 L 0 180 Z; M 0 166 Q 230 180 460 166 T 920 172 L 920 180 L 0 180 Z" />
+      </path>
+    </g>
+  </g>
+</svg>

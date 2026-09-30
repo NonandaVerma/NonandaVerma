@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 300">
+  <defs>
+    <linearGradient id="hBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1489CA" />
+      <stop offset="55%" stop-color="#117EBA" />
+      <stop offset="100%" stop-color="#0E6B9E" />
+    </linearGradient>
+    <linearGradient id="hBorder" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FF7704"><animate attributeName="stop-color" values="#FF7704;#FFFFFF;#1489CA;#FF7704" dur="7s" repeatCount="indefinite" /></stop>
+      <stop offset="50%" stop-color="#FFFFFF"><animate attributeName="stop-color" values="#FFFFFF;#FF7704;#1489CA;#FFFFFF" dur="7s" repeatCount="indefinite" /></stop>
+      <stop offset="100%" stop-color="#1489CA"><animate attributeName="stop-color" values="#1489CA;#F6530F;#FF7704;#1489CA" dur="7s" repeatCount="indefinite" /></stop>
+    </linearGradient>
+    <radialGradient id="hGlowOrange" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#FF7704" stop-opacity="0.45" />
+      <stop offset="100%" stop-color="#FF7704" stop-opacity="0" />
+    </radialGradient>
+    <radialGradient id="hGlowWhite" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.18" />
+      <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0" />
+    </radialGradient>
+    <filter id="hBlur" x="-60%" y="-60%" width="220%" height="220%"><feGaussianBlur stdDeviation="26" /></filter>
+    <clipPath id="hClip"><rect x="0" y="0" width="920" height="300" rx="28" /></clipPath>
+  </defs>
+
+  <style>
+    .h-title { font-family: -apple-system, BlinkMacSystemFont, 'Montserrat', 'Segoe UI', Roboto, sans-serif; font-size: 46px; font-weight: 900; letter-spacing: 2.5px; fill: #FFFFFF; }
+    .h-tag { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; font-size: 14.5px; font-weight: 700; letter-spacing: 3px; fill: #FFFFFF; }
+    .h-btn { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; font-size: 13px; font-weight: 800; letter-spacing: 1.3px; fill: #FFFFFF; }
+    @keyframes hDrift { 0%,100% { transform: translate(0,0); } 50% { transform: translate(0,-12px); } }
+    .h-orb1 { animation: hDrift 8s ease-in-out infinite; }
+    .h-orb2 { animation: hDrift 10s ease-in-out infinite reverse; }
+  </style>
+
+  <g clip-path="url(#hClip)">
+    <rect x="0" y="0" width="920" height="300" fill="url(#hBg)" />
+    <circle class="h-orb1" cx="90" cy="60" r="130" fill="url(#hGlowOrange)" filter="url(#hBlur)" />
+    <circle class="h-orb2" cx="830" cy="240" r="150" fill="url(#hGlowWhite)" filter="url(#hBlur)" />
+    <rect x="3" y="3" width="914" height="294" rx="26" fill="none" stroke="url(#hBorder)" stroke-width="2.5">
+      <animate attributeName="stroke-opacity" values="0.65;1;0.65" dur="5s" repeatCount="indefinite" />
+    </rect>
+
+    <text x="460" y="86" text-anchor="middle" class="h-title" textLength="430" lengthAdjust="spacingAndGlyphs">NONANDA VERMA</text>
+
+    <g text-anchor="middle">
+      <text x="460" y="118" class="h-tag" textLength="480" lengthAdjust="spacingAndGlyphs" opacity="1">DESIGNER BY EYE. DEVELOPER BY CODE.
+        <animate attributeName="opacity" values="1;1;0;0" dur="9s" repeatCount="indefinite" />
+      </text>
+      <text x="460" y="118" class="h-tag" textLength="480" lengthAdjust="spacingAndGlyphs" opacity="0">FULL-STACK ARCHITECT + AI SYSTEMS ENGINEER
+        <animate attributeName="opacity" values="0;0;1;1" dur="9s" repeatCount="indefinite" />
+      </text>
+    </g>
+
+    <line x1="360" y1="142" x2="560" y2="142" stroke="#FFFFFF" stroke-width="1.5" stroke-opacity="0.75">
+      <animate attributeName="stroke-opacity" values="0.4;0.9;0.4" dur="4s" repeatCount="indefinite" />
+    </line>
+
+    <g transform="translate(210, 172)">
+      <rect x="0" y="0" width="135" height="42" rx="21" fill="#0A5B9E" stroke="#FFFFFF" stroke-width="1.8" />
+      <text x="67.5" y="26.5" text-anchor="middle" class="h-btn" textLength="72" lengthAdjust="spacingAndGlyphs">LINKEDIN</text>
+
+      <rect x="155" y="0" width="160" height="42" rx="21" fill="#070A12" stroke="#FFFFFF" stroke-width="1.8" />
+      <text x="235" y="26.5" text-anchor="middle" class="h-btn" textLength="108" lengthAdjust="spacingAndGlyphs">LET'S CONNECT</text>
+
+      <rect x="335" y="0" width="135" height="42" rx="21" fill="#FF7704" stroke="#FFFFFF" stroke-width="1.8">
+        <animate attributeName="fill" values="#FF7704;#F6530F;#FF7704" dur="4s" repeatCount="indefinite" />
+      </rect>
+      <text x="402.5" y="26.5" text-anchor="middle" class="h-btn" textLength="76" lengthAdjust="spacingAndGlyphs">PORTFOLIO</text>
+    </g>
+
+    <text x="460" y="268" text-anchor="middle" class="h-tag" font-weight="500" letter-spacing="1.5px" font-size="13" fill="#CFEBFF" textLength="520" lengthAdjust="spacingAndGlyphs">AGENTIC AI &amp; RAG · CRYPTOGRAPHIC IDENTITY SYSTEMS · PIXEL-PERFECT UI</text>
+  </g>
+</svg>

@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 680">
+  <defs>
+    <linearGradient id="pBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1489CA" />
+      <stop offset="55%" stop-color="#117EBA" />
+      <stop offset="100%" stop-color="#0E6B9E" />
+    </linearGradient>
+    <linearGradient id="pBorder" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FF7704"><animate attributeName="stop-color" values="#FF7704;#FFFFFF;#1489CA;#FF7704" dur="7s" repeatCount="indefinite" /></stop>
+      <stop offset="50%" stop-color="#FFFFFF"><animate attributeName="stop-color" values="#FFFFFF;#FF7704;#1489CA;#FFFFFF" dur="7s" repeatCount="indefinite" /></stop>
+      <stop offset="100%" stop-color="#1489CA"><animate attributeName="stop-color" values="#1489CA;#F6530F;#FF7704;#1489CA" dur="7s" repeatCount="indefinite" /></stop>
+    </linearGradient>
+    <filter id="pShadow" x="-10%" y="-10%" width="120%" height="125%">
+      <feDropShadow dx="0" dy="12" stdDeviation="16" flood-color="#000000" flood-opacity="0.22" />
+    </filter>
+    <clipPath id="pOuter"><rect x="0" y="0" width="920" height="680" rx="28" /></clipPath>
+    <clipPath id="pCard"><rect x="30" y="30" width="860" height="610" rx="24" /></clipPath>
+  </defs>
+
+  <style>
+    .p-title { font-family: -apple-system, BlinkMacSystemFont, 'Montserrat', 'Segoe UI', Roboto, sans-serif; font-size: 23px; font-weight: 900; letter-spacing: 1px; text-transform: uppercase; fill: #FF7704; }
+    .p-proj-title { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; font-size: 16px; font-weight: 800; fill: #0F172A; }
+    .p-proj-tags { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; font-size: 12px; font-weight: 700; letter-spacing: 0.5px; fill: #1489CA; }
+    .p-proj-desc { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; font-size: 13.5px; font-weight: 400; fill: #475569; }
+    .p-quote { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; font-size: 15px; font-weight: 600; fill: #FFFFFF; }
+  </style>
+
+  <g clip-path="url(#pOuter)">
+    <rect x="0" y="0" width="920" height="680" fill="url(#pBg)" />
+    <rect x="3" y="3" width="914" height="674" rx="26" fill="none" stroke="url(#pBorder)" stroke-width="2.2">
+      <animate attributeName="stroke-opacity" values="0.55;1;0.55" dur="6s" repeatCount="indefinite" />
+    </rect>
+
+    <g clip-path="url(#pCard)" filter="url(#pShadow)">
+      <rect x="30" y="30" width="860" height="610" rx="24" fill="#FFFFFF" />
+
+      <g transform="translate(85, 58)" stroke="#FF7704" stroke-width="2.6" fill="none" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09z"/>
+        <path d="M12 15l-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 0 1-4 2z"/>
+      </g>
+      <text x="118" y="90" class="p-title">Featured Engineering Showcase</text>
+
+      <!-- Project 1 -->
+      <text x="85" y="150" class="p-proj-title">🚀 Portfolio &amp; ENVI AI Command Center</text>
+      <text x="85" y="173" class="p-proj-tags" textLength="334" lengthAdjust="spacingAndGlyphs">NEXT.JS 16 • FASTAPI • LANGGRAPH • CHROMADB</text>
+      <text x="85" y="195" class="p-proj-desc" textLength="489" lengthAdjust="spacingAndGlyphs">5-tier zero-downtime LLM failover, 768-dim vector RAG memory, and</text>
+      <text x="85" y="216" class="p-proj-desc" textLength="387" lengthAdjust="spacingAndGlyphs">Cloudinary edge asset compression (f_auto, q_auto).</text>
+
+      <!-- Project 2 -->
+      <text x="85" y="250" class="p-proj-title">🔐 Custom OAuth2 Identity Provider (IdP)</text>
+      <text x="85" y="273" class="p-proj-tags" textLength="357" lengthAdjust="spacingAndGlyphs">COLDBOX • JWT / JWE • RSA-256 ROTATION • MSSQL</text>
+      <text x="85" y="295" class="p-proj-desc" textLength="511" lengthAdjust="spacingAndGlyphs">RFC 6749 compliant PKCE auth server with automated PEM key rotation,</text>
+      <text x="85" y="316" class="p-proj-desc" textLength="402" lengthAdjust="spacingAndGlyphs">eliminating recurring commercial identity SaaS costs.</text>
+
+      <!-- Project 3 -->
+      <text x="85" y="350" class="p-proj-title">⚡ Agentic SSH Terminal Orchestrator</text>
+      <text x="85" y="373" class="p-proj-tags" textLength="334" lengthAdjust="spacingAndGlyphs">NODE.JS • EXPRESS • XTERM.JS • LOCAL OLLAMA</text>
+      <text x="85" y="395" class="p-proj-desc" textLength="475" lengthAdjust="spacingAndGlyphs">Sub-10ms bi-directional WebSocket ANSI streaming bridge routing</text>
+      <text x="85" y="416" class="p-proj-desc" textLength="460" lengthAdjust="spacingAndGlyphs">autonomous CLI agent workflows with persistent Tmux sessions.</text>
+
+      <!-- Project 4 -->
+      <text x="85" y="450" class="p-proj-title">📊 Schema-Driven Dynamic Dashboard</text>
+      <text x="85" y="473" class="p-proj-tags" textLength="342" lengthAdjust="spacingAndGlyphs">REACT • PLOTLY.JS • RECHARTS • MONGODB ATLAS</text>
+      <text x="85" y="495" class="p-proj-desc" textLength="482" lengthAdjust="spacingAndGlyphs">Low-code data analytics engine dynamically transforming raw JSON</text>
+      <text x="85" y="516" class="p-proj-desc" textLength="511" lengthAdjust="spacingAndGlyphs">and Mongo schemas into multi-axis charts with zero frontend rebuilds.</text>
+
+      <rect x="30" y="550" width="860" height="70" fill="#070A12" />
+      <text x="460" y="592" text-anchor="middle" class="p-quote" textLength="578" lengthAdjust="spacingAndGlyphs">Engineered for fault-tolerance, sub-second latency, and measurable impact.</text>
+    </g>
+  </g>
+</svg>

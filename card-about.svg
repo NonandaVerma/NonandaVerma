@@ -1,0 +1,88 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 800">
+  <defs>
+    <linearGradient id="aBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1489CA" />
+      <stop offset="55%" stop-color="#117EBA" />
+      <stop offset="100%" stop-color="#0E6B9E" />
+    </linearGradient>
+    <linearGradient id="aBorder" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FF7704"><animate attributeName="stop-color" values="#FF7704;#FFFFFF;#1489CA;#FF7704" dur="7s" repeatCount="indefinite" /></stop>
+      <stop offset="50%" stop-color="#FFFFFF"><animate attributeName="stop-color" values="#FFFFFF;#FF7704;#1489CA;#FFFFFF" dur="7s" repeatCount="indefinite" /></stop>
+      <stop offset="100%" stop-color="#1489CA"><animate attributeName="stop-color" values="#1489CA;#F6530F;#FF7704;#1489CA" dur="7s" repeatCount="indefinite" /></stop>
+    </linearGradient>
+    <filter id="aShadow" x="-10%" y="-10%" width="120%" height="125%">
+      <feDropShadow dx="0" dy="12" stdDeviation="16" flood-color="#000000" flood-opacity="0.22" />
+    </filter>
+    <clipPath id="aOuter"><rect x="0" y="0" width="920" height="800" rx="28" /></clipPath>
+    <clipPath id="aCard"><rect x="30" y="30" width="860" height="720" rx="24" /></clipPath>
+  </defs>
+
+  <style>
+    .a-title { font-family: -apple-system, BlinkMacSystemFont, 'Montserrat', 'Segoe UI', Roboto, sans-serif; font-size: 23px; font-weight: 900; letter-spacing: 1px; text-transform: uppercase; fill: #FF7704; }
+    .a-lead { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; font-size: 15px; font-weight: 500; fill: #334155; }
+    .a-label { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; font-size: 14px; font-weight: 700; fill: #0F172A; }
+    .a-desc { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; font-size: 14px; font-weight: 400; fill: #475569; }
+    .a-quote { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; font-size: 15px; font-weight: 600; font-style: italic; fill: #FFFFFF; }
+    @keyframes aPulse { 0%,100% { r: 5.5; } 50% { r: 6.5; } }
+    .a-dot { animation: aPulse 2.6s ease-in-out infinite; }
+  </style>
+
+  <g clip-path="url(#aOuter)">
+    <rect x="0" y="0" width="920" height="800" fill="url(#aBg)" />
+    <rect x="3" y="3" width="914" height="794" rx="26" fill="none" stroke="url(#aBorder)" stroke-width="2.2">
+      <animate attributeName="stroke-opacity" values="0.55;1;0.55" dur="6s" repeatCount="indefinite" />
+    </rect>
+
+    <g clip-path="url(#aCard)" filter="url(#aShadow)">
+      <rect x="30" y="30" width="860" height="720" rx="24" fill="#FFFFFF" />
+
+      <g transform="translate(85, 62)" stroke="#FF7704" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round">
+        <circle cx="14" cy="16" r="12"><animate attributeName="r" values="12;13.5;12" dur="2s" repeatCount="indefinite" /></circle>
+        <line x1="14" y1="2" x2="14" y2="5" />
+        <line x1="10" y1="2" x2="18" y2="2" />
+        <line x1="14" y1="16" x2="19" y2="12" />
+      </g>
+      <text x="118" y="90" class="a-title">The 30-Second Download</text>
+
+      <g class="a-lead">
+        <text x="85" y="150" textLength="547" lengthAdjust="spacingAndGlyphs">I engineer resilient full-stack systems, custom cryptographic identity</text>
+        <text x="85" y="176" textLength="502" lengthAdjust="spacingAndGlyphs">protocols, and autonomous AI agent workflows — then wrap them in</text>
+        <text x="85" y="202" textLength="494" lengthAdjust="spacingAndGlyphs">high-converting, pixel-perfect design systems. Zero boilerplate</text>
+        <text x="85" y="228" textLength="213" lengthAdjust="spacingAndGlyphs">fluff, zero sloppy layouts.</text>
+      </g>
+
+      <!-- Bullet 1 -->
+      <circle class="a-dot" cx="92" cy="266" r="5.5" fill="#1489CA" />
+      <text x="110" y="272" class="a-label" textLength="153" lengthAdjust="spacingAndGlyphs">Architectural Depth:</text>
+      <text x="85" y="293" class="a-desc" textLength="511" lengthAdjust="spacingAndGlyphs">From engineering in-house enterprise OAuth2 Identity Providers (IdP)</text>
+      <text x="85" y="314" class="a-desc" textLength="526" lengthAdjust="spacingAndGlyphs">with cryptographic JWT/JWE lifecycles, to orchestrating local AI agent</text>
+      <text x="85" y="335" class="a-desc" textLength="467" lengthAdjust="spacingAndGlyphs">CLI execution environments with real-time WebSocket pipelines.</text>
+
+      <!-- Bullet 2 -->
+      <circle class="a-dot" cx="92" cy="368" r="5.5" fill="#FF7704" />
+      <text x="110" y="374" class="a-label" textLength="131" lengthAdjust="spacingAndGlyphs">Agentic AI &amp; RAG:</text>
+      <text x="85" y="395" class="a-desc" textLength="511" lengthAdjust="spacingAndGlyphs">Creator of ENVI, an autonomous AI portfolio command center featuring</text>
+      <text x="85" y="416" class="a-desc" textLength="518" lengthAdjust="spacingAndGlyphs">5-tier zero-downtime failover, Python FastAPI, LangGraph StateGraphs,</text>
+      <text x="85" y="437" class="a-desc" textLength="350" lengthAdjust="spacingAndGlyphs">and ChromaDB 768-dimensional vector retrieval.</text>
+
+      <!-- Bullet 3 -->
+      <circle class="a-dot" cx="92" cy="470" r="5.5" fill="#0A5B9E" />
+      <text x="110" y="476" class="a-label" textLength="131" lengthAdjust="spacingAndGlyphs">Visual Instincts:</text>
+      <text x="85" y="497" class="a-desc" textLength="482" lengthAdjust="spacingAndGlyphs">3rd Runner-Up nationwide in the Government of India / MyGov IHRC</text>
+      <text x="85" y="518" class="a-desc" textLength="518" lengthAdjust="spacingAndGlyphs">National Logo Design Competition. Every layout I ship is disciplined,</text>
+      <text x="85" y="539" class="a-desc" textLength="256" lengthAdjust="spacingAndGlyphs">responsive, and performance-tuned.</text>
+
+      <!-- Bullet 4 -->
+      <circle class="a-dot" cx="92" cy="572" r="5.5" fill="#070A12" />
+      <text x="110" y="578" class="a-label" textLength="117" lengthAdjust="spacingAndGlyphs">Academic Rigor:</text>
+      <text x="85" y="599" class="a-desc" textLength="482" lengthAdjust="spacingAndGlyphs">Master of Computer Applications (75% First Class Distinction) &amp;</text>
+      <text x="85" y="620" class="a-desc" textLength="329" lengthAdjust="spacingAndGlyphs">BSc Biotechnology (92% Distinction Honours).</text>
+
+      <rect x="30" y="650" width="860" height="80" fill="#FF7704">
+        <animate attributeName="fill" values="#FF7704;#F6530F;#FF7704" dur="6s" repeatCount="indefinite" />
+      </rect>
+      <text x="460" y="686" text-anchor="middle" class="a-quote" textLength="593" lengthAdjust="spacingAndGlyphs">Most developers either dread CSS or run away from distributed backend logic.</text>
+      <text x="460" y="710" text-anchor="middle" class="a-quote" textLength="258" lengthAdjust="spacingAndGlyphs">I live comfortably in the middle.</text>
+    </g>
+  </g>
+</svg>

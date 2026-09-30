@@ -23,12 +23,16 @@
   </defs>
 
   <style>
-    .h-title { font-family: -apple-system, BlinkMacSystemFont, 'Montserrat', 'Segoe UI', Roboto, sans-serif; font-size: 46px; font-weight: 900; letter-spacing: 2.5px; fill: #FFFFFF; }
-    .h-tag { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; font-size: 14.5px; font-weight: 700; letter-spacing: 3px; fill: #FFFFFF; }
+    .h-title { font-family: -apple-system, BlinkMacSystemFont, 'Montserrat', 'Segoe UI', Roboto, sans-serif; font-size: 42px; font-weight: 900; letter-spacing: 1.5px; fill: #FFFFFF; }
+    .h-tag { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; font-size: 14.5px; font-weight: 700; letter-spacing: 2px; fill: #FFFFFF; }
     .h-btn { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; font-size: 13px; font-weight: 800; letter-spacing: 1.3px; fill: #FFFFFF; }
     @keyframes hDrift { 0%,100% { transform: translate(0,0); } 50% { transform: translate(0,-12px); } }
     .h-orb1 { animation: hDrift 8s ease-in-out infinite; }
     .h-orb2 { animation: hDrift 10s ease-in-out infinite reverse; }
+    @keyframes hCursor { 0%,45% { opacity: 1; } 50%,100% { opacity: 0; } }
+    .h-cursor { animation: hCursor 1s steps(1) infinite; }
+    @keyframes hBob { 0%,100% { transform: translateY(0); } 50% { transform: translateY(-6px); } }
+    .h-avatar { animation: hBob 5s ease-in-out infinite; }
   </style>
 
   <g clip-path="url(#hClip)">
@@ -39,22 +43,25 @@
       <animate attributeName="stroke-opacity" values="0.65;1;0.65" dur="5s" repeatCount="indefinite" />
     </rect>
 
-    <text x="460" y="86" text-anchor="middle" class="h-title" textLength="430" lengthAdjust="spacingAndGlyphs">NONANDA VERMA</text>
-
-    <g text-anchor="middle">
-      <text x="460" y="118" class="h-tag" textLength="480" lengthAdjust="spacingAndGlyphs" opacity="1">DESIGNER BY EYE. DEVELOPER BY CODE.
-        <animate attributeName="opacity" values="1;1;0;0" dur="9s" repeatCount="indefinite" />
-      </text>
-      <text x="460" y="118" class="h-tag" textLength="480" lengthAdjust="spacingAndGlyphs" opacity="0">FULL-STACK ARCHITECT + AI SYSTEMS ENGINEER
-        <animate attributeName="opacity" values="0;0;1;1" dur="9s" repeatCount="indefinite" />
-      </text>
+    <g class="h-avatar">
+      <image href="./avatar-dark.png" x="50" y="48" width="204" height="204" />
     </g>
 
-    <line x1="360" y1="142" x2="560" y2="142" stroke="#FFFFFF" stroke-width="1.5" stroke-opacity="0.75">
-      <animate attributeName="stroke-opacity" values="0.4;0.9;0.4" dur="4s" repeatCount="indefinite" />
-    </line>
+    <text x="290" y="100" class="h-title" textLength="410" lengthAdjust="spacingAndGlyphs">NONANDA VERMA</text>
 
-    <g transform="translate(210, 172)">
+    <g>
+      <text x="290" y="132" class="h-tag" textLength="460" lengthAdjust="spacingAndGlyphs" opacity="1">DESIGNER BY EYE. DEVELOPER BY CODE.
+        <animate attributeName="opacity" values="1;1;0;0" dur="9s" repeatCount="indefinite" />
+      </text>
+      <text x="290" y="132" class="h-tag" textLength="460" lengthAdjust="spacingAndGlyphs" opacity="0">FULL-STACK ARCHITECT + AI SYSTEMS ENGINEER
+        <animate attributeName="opacity" values="0;0;1;1" dur="9s" repeatCount="indefinite" />
+      </text>
+      <rect class="h-cursor" x="756" y="119" width="9" height="16" fill="#FF7704" />
+    </g>
+
+    <text x="290" y="158" class="h-tag" font-weight="500" letter-spacing="1px" font-size="12.5" fill="#CFEBFF" textLength="480" lengthAdjust="spacingAndGlyphs">AGENTIC AI &amp; RAG · CRYPTOGRAPHIC IDENTITY · PIXEL-PERFECT UI</text>
+
+    <g transform="translate(290, 184)">
       <rect x="0" y="0" width="135" height="42" rx="21" fill="#0A5B9E" stroke="#FFFFFF" stroke-width="1.8" />
       <text x="67.5" y="26.5" text-anchor="middle" class="h-btn" textLength="72" lengthAdjust="spacingAndGlyphs">LINKEDIN</text>
 
@@ -66,7 +73,5 @@
       </rect>
       <text x="402.5" y="26.5" text-anchor="middle" class="h-btn" textLength="76" lengthAdjust="spacingAndGlyphs">PORTFOLIO</text>
     </g>
-
-    <text x="460" y="268" text-anchor="middle" class="h-tag" font-weight="500" letter-spacing="1.5px" font-size="13" fill="#CFEBFF" textLength="520" lengthAdjust="spacingAndGlyphs">AGENTIC AI &amp; RAG · CRYPTOGRAPHIC IDENTITY SYSTEMS · PIXEL-PERFECT UI</text>
   </g>
 </svg>
